@@ -1,4 +1,6 @@
 {
+  inputs.nixpkgs.url = "nixpkgs/nixos-unstable";
+
   outputs = { self, nixpkgs }:
     let
       forAllSystems = nixpkgs.lib.genAttrs [ "x86_64-linux" ];
